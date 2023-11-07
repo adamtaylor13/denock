@@ -15,7 +15,7 @@ export interface DenockOptions {
   /** This is the body that will be returned on interception*/
   responseBody: any;
   /** This is the headers that will be returned on interception */
-  responseHeader?: Record<string, any>;
+  responseHeaders?: Record<string, any>;
   /** Represent the number of call you wants to intercept*/
   interception?: number;
 }
