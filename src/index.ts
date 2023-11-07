@@ -88,7 +88,7 @@ function denock(options: DenockOptions): Interceptor {
       arrayBuffer: () => responseBody as any,
       blob: () => responseBody as any,
       formData: () => responseBody as any,
-      headers: () => responseHeaders as any,
+      headers: responseHeaders as any,
     } as Response;
   };
 
